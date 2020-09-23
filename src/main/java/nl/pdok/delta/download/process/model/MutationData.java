@@ -9,7 +9,7 @@ public class MutationData {
         public String id;
         public String data;
 
-        private MutatieDataBuilder() {
+        public MutatieDataBuilder() {
         }
 
         public static MutatieDataBuilder aMutatie() {

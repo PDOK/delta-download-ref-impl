@@ -122,6 +122,7 @@ public class DatabaseFacade {
             if (mutationGroup.wordt != null) {
                 // make the processing idempotent add delete if message was replayed
                 stmt.addBatch("DELETE FROM data WHERE id='" + mutationGroup.wordt.id + "';");
+
                 stmt.addBatch("INSERT INTO data (id, feature, \"data\") VALUES('" + mutationGroup.wordt.id + "', '" + mutationGroup.objectType + "', '" + mutationGroup.wordt.data + "');");
             }
         }

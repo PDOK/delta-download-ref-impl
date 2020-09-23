@@ -123,34 +123,26 @@ public class Zipfile2Stream {
     }
 
     private void setMutatie(XMLStreamReader streamReader, MutationGroup mg) throws Exception {
-
-        MutationData mutationData = null;
         while (streamReader.hasNext()) {
             int event = streamReader.next();
             switch (event) {
                 case XMLStreamReader.START_ELEMENT: {
-
                     String localName = streamReader.getLocalName();
                     if ("was".equals(localName)) {
-                        mutationData = new MutationData();
-                        mutationData.id = streamReader.getAttributeValue(0);
-                        mutationData.data = XmlReaderUtil.getTagContentAsXML(streamReader);
+                        mg.was = new MutationData.MutatieDataBuilder()
+                                .withId(streamReader.getAttributeValue(0))
+                                .withData(XmlReaderUtil.getTagContentAsXML(streamReader)).build();
 
                     } else if ("wordt".equals(localName)) {
-                        mutationData = new MutationData();
-                        mutationData.id = streamReader.getAttributeValue(0);
-                        mutationData.data = XmlReaderUtil.getTagContentAsXML(streamReader);
+                        mg.wordt = new MutationData.MutatieDataBuilder()
+                                .withId(streamReader.getAttributeValue(0))
+                                .withData(XmlReaderUtil.getTagContentAsXML(streamReader)).build();
                     }
                     break;
                 }
                 case XMLStreamReader.END_ELEMENT: {
                     String localName = streamReader.getLocalName();
-                    if ("was".equals(localName)) {
-                        mg.was = mutationData;
-                    } else if ("wordt".equals(localName)) {
-                        mg.wordt = mutationData;
-                    } // end of mutations
-                    else if ("toevoeging".equals(localName)) {
+                    if ("toevoeging".equals(localName)) {
                         return;
                     } else if ("wijziging".equals(localName)) {
                         return;

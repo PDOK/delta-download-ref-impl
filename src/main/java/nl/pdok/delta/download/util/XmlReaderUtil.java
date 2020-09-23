@@ -70,12 +70,12 @@ public class XmlReaderUtil {
                     break;
                 case XMLStreamConstants.START_DOCUMENT:
                     out.write("<?xml");
-                    out.write(" version='" + xmlr.getVersion() + "'");
-                    out.write(" encoding='" + xmlr.getCharacterEncodingScheme() + "'");
+                    out.write(" version=\"" + xmlr.getVersion() + "\"");
+                    out.write(" encoding=\"" + xmlr.getCharacterEncodingScheme() + "\"");
                     if (xmlr.isStandalone())
-                        out.write(" standalone='yes'");
+                        out.write(" standalone=\"yes\"");
                     else
-                        out.write(" standalone='no'");
+                        out.write(" standalone=\"no\"");
                     out.write("?>");
                     break;
             }
@@ -87,7 +87,7 @@ public class XmlReaderUtil {
             throw new XMLStreamException("End element for " + tagLocalName + " not found");
         }
 
-        return out.toString();
+        return out.toString().replaceAll("\n", "").replaceAll("'", "''");
     }
 
 
@@ -106,7 +106,7 @@ public class XmlReaderUtil {
     private static void writeName(String prefix,
                            String uri,
                            String localName, Writer out) throws IOException {
-        //  if (uri != null && !("".equals(uri)) ) out.write("['"+uri+"']:");
+        //  if (uri != null && !("".equals(uri)) ) out.write("[""+uri+""]:");
         if (prefix != null && !"".equals(prefix)) out.write(prefix + ":");
         if (localName != null) out.write(localName);
     }
@@ -123,8 +123,8 @@ public class XmlReaderUtil {
         String localName = xmlr.getAttributeLocalName(index);
         String value = xmlr.getAttributeValue(index);
         out.write(" ");
-       writeName(prefix, namespace, localName, out);
-        out.write("='" + value + "'");
+        writeName(prefix, namespace, localName, out);
+        out.write("=\"" + value + "\"");
     }
 
     private static void writeNamespaces(XMLStreamReader xmlr, Writer out) throws IOException {
@@ -138,8 +138,8 @@ public class XmlReaderUtil {
         String uri = xmlr.getNamespaceURI(index);
         out.write(" ");
         if (prefix == null)
-            out.write("xmlns='" + uri + "'");
+            out.write("xmlns=\"" + uri + "\"");
         else
-            out.write("xmlns:" + prefix + "='" + uri + "'");
+            out.write("xmlns:" + prefix + "=\"" + uri + "\"");
     }
 }
