@@ -40,8 +40,6 @@ Building the API client library requires:
  
 @startuml img/programInitial
 
-title __Initial Download Sequence1 Diagram__\n
-
 control Flow
 
 control DownloadService
@@ -50,21 +48,24 @@ control Zipfile2Stream
 control DatabaseFacade
 database Postgres
 
-Flow -> DatabaseFacade: findLastMutationMessage
-DatabaseFacade -> Postgres : find
-Postgres -> DatabaseFacade: MutationMessage [0..1]
+Flow -> DatabaseFacade: get last delta-id
+DatabaseFacade -> Postgres : find delta-id
+Postgres -> DatabaseFacade: initial
+DatabaseFacade -> Flow
 
-DatabaseFacade -> DownloadService : get initial ZipFile
+Flow -> DownloadService : get file for delta-id
 DownloadService -> Zipfile2Stream : parseZipfile()
-
 Zipfile2Stream -> DatabaseFacade : insertMutationGroups
 DatabaseFacade -> Postgres : batch mutationgroups
 Postgres -> DatabaseFacade: update response
-DatabaseFacade -> Postgres: Insert MutationMessage
-Postgres -> DatabaseFacade: inserted 
-DatabaseFacade -> Flow: finished processing initial zipfile  
+DatabaseFacade -> Flow
+Flow -> DatabaseFacade: save delta-id
+DatabaseFacade -> Postgres: insert delta-id
+Postgres -> DatabaseFacade: inserted
+DatabaseFacade -> Flow: finished processing file for delta-id
 
 @enduml
+
 -->
 
 ![](./img/programInitial.svg)

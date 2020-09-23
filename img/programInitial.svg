@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" contentScriptType="application/ecmascript" contentStyleType="text/css"
-     height="537px" preserveAspectRatio="none" style="width:615px;height:537px;" version="1.1" viewBox="0 0 615 537"
-     width="615px" zoomAndPan="magnify">
+     height="538px" preserveAspectRatio="none" style="width:659px;height:538px;" version="1.1" viewBox="0 0 659 538"
+     width="659px" zoomAndPan="magnify">
     <defs>
-        <filter height="300%" id="f1gasb1pbur227" width="300%" x="-1" y="-1">
+        <filter height="300%" id="f1gya8g67iruf8" width="300%" x="-1" y="-1">
             <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
             <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
@@ -12,160 +12,164 @@
         </filter>
     </defs>
     <g>
-        <text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs"
-              text-decoration="underline" textLength="318" x="149.5" y="27.4023">Initial Download Sequence1 Diagram
-        </text>
-        <text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="0"
-              x="311.5" y="48.6016"/>
-        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="27" x2="27" y1="121.8867"
-              y2="464.3027"/>
-        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="117" x2="117" y1="121.8867"
-              y2="464.3027"/>
-        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="241" x2="241" y1="121.8867"
-              y2="464.3027"/>
-        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="402" x2="402" y1="121.8867"
-              y2="464.3027"/>
-        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="576" x2="576" y1="121.8867"
-              y2="464.3027"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="27" x2="27" y1="65.4883"
+              y2="465.2148"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="171.5" x2="171.5" y1="65.4883"
+              y2="465.2148"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="295.5" x2="295.5" y1="65.4883"
+              y2="465.2148"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="456.5" x2="456.5" y1="65.4883"
+              y2="465.2148"/>
+        <line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="620.5" x2="620.5" y1="65.4883"
+              y2="465.2148"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32"
-              x="8" y="118.9336">Flow
+              x="8" y="62.5352">Flow
         </text>
-        <ellipse cx="27" cy="89.3984" fill="#FEFECE" filter="url(#f1gasb1pbur227)" rx="12" ry="12"
+        <ellipse cx="27" cy="33" fill="#FEFECE" filter="url(#f1gya8g67iruf8)" rx="12" ry="12"
                  style="stroke: #A80036; stroke-width: 2.0;"/>
-        <polygon fill="#A80036" points="23,77.3984,29,72.3984,27,77.3984,29,82.3984,23,77.3984"
-                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="23,21,29,16,27,21,29,26,23,21" style="stroke: #A80036; stroke-width: 1.0;"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32"
-              x="8" y="476.8379">Flow
+              x="8" y="477.75">Flow
         </text>
-        <ellipse cx="27" cy="495.791" fill="#FEFECE" filter="url(#f1gasb1pbur227)" rx="12" ry="12"
+        <ellipse cx="27" cy="496.7031" fill="#FEFECE" filter="url(#f1gya8g67iruf8)" rx="12" ry="12"
                  style="stroke: #A80036; stroke-width: 2.0;"/>
-        <polygon fill="#A80036" points="23,483.791,29,478.791,27,483.791,29,488.791,23,483.791"
+        <polygon fill="#A80036" points="23,484.7031,29,479.7031,27,484.7031,29,489.7031,23,484.7031"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="117"
-              x="56" y="118.9336">DownloadService
+              x="110.5" y="62.5352">DownloadService
         </text>
-        <ellipse cx="117.5" cy="89.3984" fill="#FEFECE" filter="url(#f1gasb1pbur227)" rx="12" ry="12"
+        <ellipse cx="172" cy="33" fill="#FEFECE" filter="url(#f1gya8g67iruf8)" rx="12" ry="12"
                  style="stroke: #A80036; stroke-width: 2.0;"/>
-        <polygon fill="#A80036" points="113.5,77.3984,119.5,72.3984,117.5,77.3984,119.5,82.3984,113.5,77.3984"
+        <polygon fill="#A80036" points="168,21,174,16,172,21,174,26,168,21"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="117"
-              x="56" y="476.8379">DownloadService
+              x="110.5" y="477.75">DownloadService
         </text>
-        <ellipse cx="117.5" cy="495.791" fill="#FEFECE" filter="url(#f1gasb1pbur227)" rx="12" ry="12"
+        <ellipse cx="172" cy="496.7031" fill="#FEFECE" filter="url(#f1gya8g67iruf8)" rx="12" ry="12"
                  style="stroke: #A80036; stroke-width: 2.0;"/>
-        <polygon fill="#A80036" points="113.5,483.791,119.5,478.791,117.5,483.791,119.5,488.791,113.5,483.791"
+        <polygon fill="#A80036" points="168,484.7031,174,479.7031,172,484.7031,174,489.7031,168,484.7031"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="99"
-              x="189" y="118.9336">Zipfile2Stream
+              x="243.5" y="62.5352">Zipfile2Stream
         </text>
-        <ellipse cx="241.5" cy="89.3984" fill="#FEFECE" filter="url(#f1gasb1pbur227)" rx="12" ry="12"
+        <ellipse cx="296" cy="33" fill="#FEFECE" filter="url(#f1gya8g67iruf8)" rx="12" ry="12"
                  style="stroke: #A80036; stroke-width: 2.0;"/>
-        <polygon fill="#A80036" points="237.5,77.3984,243.5,72.3984,241.5,77.3984,243.5,82.3984,237.5,77.3984"
+        <polygon fill="#A80036" points="292,21,298,16,296,21,298,26,292,21"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="99"
-              x="189" y="476.8379">Zipfile2Stream
+              x="243.5" y="477.75">Zipfile2Stream
         </text>
-        <ellipse cx="241.5" cy="495.791" fill="#FEFECE" filter="url(#f1gasb1pbur227)" rx="12" ry="12"
+        <ellipse cx="296" cy="496.7031" fill="#FEFECE" filter="url(#f1gya8g67iruf8)" rx="12" ry="12"
                  style="stroke: #A80036; stroke-width: 2.0;"/>
-        <polygon fill="#A80036" points="237.5,483.791,243.5,478.791,241.5,483.791,243.5,488.791,237.5,483.791"
+        <polygon fill="#A80036" points="292,484.7031,298,479.7031,296,484.7031,298,489.7031,292,484.7031"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="111"
-              x="344" y="118.9336">DatabaseFacade
+              x="398.5" y="62.5352">DatabaseFacade
         </text>
-        <ellipse cx="402.5" cy="89.3984" fill="#FEFECE" filter="url(#f1gasb1pbur227)" rx="12" ry="12"
+        <ellipse cx="457" cy="33" fill="#FEFECE" filter="url(#f1gya8g67iruf8)" rx="12" ry="12"
                  style="stroke: #A80036; stroke-width: 2.0;"/>
-        <polygon fill="#A80036" points="398.5,77.3984,404.5,72.3984,402.5,77.3984,404.5,82.3984,398.5,77.3984"
+        <polygon fill="#A80036" points="453,21,459,16,457,21,459,26,453,21"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="111"
-              x="344" y="476.8379">DatabaseFacade
+              x="398.5" y="477.75">DatabaseFacade
         </text>
-        <ellipse cx="402.5" cy="495.791" fill="#FEFECE" filter="url(#f1gasb1pbur227)" rx="12" ry="12"
+        <ellipse cx="457" cy="496.7031" fill="#FEFECE" filter="url(#f1gya8g67iruf8)" rx="12" ry="12"
                  style="stroke: #A80036; stroke-width: 2.0;"/>
-        <polygon fill="#A80036" points="398.5,483.791,404.5,478.791,402.5,483.791,404.5,488.791,398.5,483.791"
+        <polygon fill="#A80036" points="453,484.7031,459,479.7031,457,484.7031,459,489.7031,453,484.7031"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="59"
-              x="544" y="118.9336">Postgres
+              x="588.5" y="62.5352">Postgres
         </text>
-        <path d="M558.5,69.3984 C558.5,59.3984 576.5,59.3984 576.5,59.3984 C576.5,59.3984 594.5,59.3984 594.5,69.3984 L594.5,95.3984 C594.5,105.3984 576.5,105.3984 576.5,105.3984 C576.5,105.3984 558.5,105.3984 558.5,95.3984 L558.5,69.3984 "
-              fill="#FEFECE" filter="url(#f1gasb1pbur227)" style="stroke: #000000; stroke-width: 1.5;"/>
-        <path d="M558.5,69.3984 C558.5,79.3984 576.5,79.3984 576.5,79.3984 C576.5,79.3984 594.5,79.3984 594.5,69.3984 "
-              fill="none" style="stroke: #000000; stroke-width: 1.5;"/>
+        <path d="M603,13 C603,3 621,3 621,3 C621,3 639,3 639,13 L639,39 C639,49 621,49 621,49 C621,49 603,49 603,39 L603,13 "
+              fill="#FEFECE" filter="url(#f1gya8g67iruf8)" style="stroke: #000000; stroke-width: 1.5;"/>
+        <path d="M603,13 C603,23 621,23 621,23 C621,23 639,23 639,13 " fill="none"
+              style="stroke: #000000; stroke-width: 1.5;"/>
         <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="59"
-              x="544" y="476.8379">Postgres
+              x="588.5" y="477.75">Postgres
         </text>
-        <path d="M558.5,489.791 C558.5,479.791 576.5,479.791 576.5,479.791 C576.5,479.791 594.5,479.791 594.5,489.791 L594.5,515.791 C594.5,525.791 576.5,525.791 576.5,525.791 C576.5,525.791 558.5,525.791 558.5,515.791 L558.5,489.791 "
-              fill="#FEFECE" filter="url(#f1gasb1pbur227)" style="stroke: #000000; stroke-width: 1.5;"/>
-        <path d="M558.5,489.791 C558.5,499.791 576.5,499.791 576.5,499.791 C576.5,499.791 594.5,499.791 594.5,489.791 "
+        <path d="M603,490.7031 C603,480.7031 621,480.7031 621,480.7031 C621,480.7031 639,480.7031 639,490.7031 L639,516.7031 C639,526.7031 621,526.7031 621,526.7031 C621,526.7031 603,526.7031 603,516.7031 L603,490.7031 "
+              fill="#FEFECE" filter="url(#f1gya8g67iruf8)" style="stroke: #000000; stroke-width: 1.5;"/>
+        <path d="M603,490.7031 C603,500.7031 621,500.7031 621,500.7031 C621,500.7031 639,500.7031 639,490.7031 "
               fill="none" style="stroke: #000000; stroke-width: 1.5;"/>
-        <polygon fill="#A80036" points="390.5,149.1973,400.5,153.1973,390.5,157.1973,394.5,153.1973"
+        <polygon fill="#A80036" points="445,92.7988,455,96.7988,445,100.7988,449,96.7988"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="27" x2="396.5" y1="153.1973" y2="153.1973"/>
-        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="161"
-              x="34" y="148.4551">findLastMutationMessage
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="27" x2="451" y1="96.7988" y2="96.7988"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="102"
+              x="34" y="92.0566">get last delta-id
         </text>
-        <polygon fill="#A80036" points="564.5,178.5078,574.5,182.5078,564.5,186.5078,568.5,182.5078"
+        <polygon fill="#A80036" points="609,122.1094,619,126.1094,609,130.1094,613,126.1094"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="402.5" x2="570.5" y1="182.5078" y2="182.5078"/>
-        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="25"
-              x="409.5" y="177.7656">find
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="457" x2="615" y1="126.1094" y2="126.1094"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80"
+              x="464" y="121.3672">find delta-id
         </text>
-        <polygon fill="#A80036" points="413.5,207.8184,403.5,211.8184,413.5,215.8184,409.5,211.8184"
+        <polygon fill="#A80036" points="468,151.4199,458,155.4199,468,159.4199,464,155.4199"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="407.5" x2="575.5" y1="211.8184" y2="211.8184"/>
-        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="146"
-              x="419.5" y="207.0762">MutationMessage [0..1]
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="462" x2="620" y1="155.4199" y2="155.4199"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="36"
+              x="474" y="150.6777">initial
         </text>
-        <polygon fill="#A80036" points="128.5,237.1289,118.5,241.1289,128.5,245.1289,124.5,241.1289"
+        <polygon fill="#A80036" points="38,165.4199,28,169.4199,38,173.4199,34,169.4199"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="122.5" x2="401.5" y1="241.1289" y2="241.1289"/>
-        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106"
-              x="134.5" y="236.3867">get initial ZipFile
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="32" x2="456" y1="169.4199" y2="169.4199"/>
+        <polygon fill="#A80036" points="160,194.7305,170,198.7305,160,202.7305,164,198.7305"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="27" x2="166" y1="198.7305" y2="198.7305"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121"
+              x="34" y="193.9883">get file for delta-id
         </text>
-        <polygon fill="#A80036" points="229.5,266.4395,239.5,270.4395,229.5,274.4395,233.5,270.4395"
+        <polygon fill="#A80036" points="284,224.041,294,228.041,284,232.041,288,228.041"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="117.5" x2="235.5" y1="270.4395" y2="270.4395"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="172" x2="290" y1="228.041" y2="228.041"/>
         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82"
-              x="124.5" y="265.6973">parseZipfile()
+              x="179" y="223.2988">parseZipfile()
         </text>
-        <polygon fill="#A80036" points="390.5,295.75,400.5,299.75,390.5,303.75,394.5,299.75"
+        <polygon fill="#A80036" points="445,253.3516,455,257.3516,445,261.3516,449,257.3516"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="241.5" x2="396.5" y1="299.75" y2="299.75"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="296" x2="451" y1="257.3516" y2="257.3516"/>
         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="137"
-              x="248.5" y="295.0078">insertMutationGroups
+              x="303" y="252.6094">insertMutationGroups
         </text>
-        <polygon fill="#A80036" points="564.5,325.0605,574.5,329.0605,564.5,333.0605,568.5,329.0605"
+        <polygon fill="#A80036" points="609,282.6621,619,286.6621,609,290.6621,613,286.6621"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="402.5" x2="570.5" y1="329.0605" y2="329.0605"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="457" x2="615" y1="286.6621" y2="286.6621"/>
         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="140"
-              x="409.5" y="324.3184">batch mutationgroups
+              x="464" y="281.9199">batch mutationgroups
         </text>
-        <polygon fill="#A80036" points="413.5,354.3711,403.5,358.3711,413.5,362.3711,409.5,358.3711"
+        <polygon fill="#A80036" points="468,311.9727,458,315.9727,468,319.9727,464,315.9727"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="407.5" x2="575.5" y1="358.3711" y2="358.3711"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="462" x2="620" y1="315.9727" y2="315.9727"/>
         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104"
-              x="419.5" y="353.6289">update response
+              x="474" y="311.2305">update response
         </text>
-        <polygon fill="#A80036" points="564.5,383.6816,574.5,387.6816,564.5,391.6816,568.5,387.6816"
+        <polygon fill="#A80036" points="38,325.9727,28,329.9727,38,333.9727,34,329.9727"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="402.5" x2="570.5" y1="387.6816" y2="387.6816"/>
-        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="150"
-              x="409.5" y="382.9395">Insert MutationMessage
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="32" x2="456" y1="329.9727" y2="329.9727"/>
+        <polygon fill="#A80036" points="445,355.2832,455,359.2832,445,363.2832,449,359.2832"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="27" x2="451" y1="359.2832" y2="359.2832"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="83"
+              x="34" y="354.541">save delta-id
         </text>
-        <polygon fill="#A80036" points="413.5,412.9922,403.5,416.9922,413.5,420.9922,409.5,416.9922"
+        <polygon fill="#A80036" points="609,384.5938,619,388.5938,609,392.5938,613,388.5938"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="407.5" x2="575.5" y1="416.9922" y2="416.9922"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="457" x2="615" y1="388.5938" y2="388.5938"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="91"
+              x="464" y="383.8516">insert delta-id
+        </text>
+        <polygon fill="#A80036" points="468,413.9043,458,417.9043,468,421.9043,464,417.9043"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="462" x2="620" y1="417.9043" y2="417.9043"/>
         <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="51"
-              x="419.5" y="412.25">inserted
+              x="474" y="413.1621">inserted
         </text>
-        <polygon fill="#A80036" points="38,442.3027,28,446.3027,38,450.3027,34,446.3027"
+        <polygon fill="#A80036" points="38,443.2148,28,447.2148,38,451.2148,34,447.2148"
                  style="stroke: #A80036; stroke-width: 1.0;"/>
-        <line style="stroke: #A80036; stroke-width: 1.0;" x1="32" x2="401.5" y1="446.3027" y2="446.3027"/>
-        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="207"
-              x="44" y="441.5605">finished processing initial zipfile
-        </text><!--MD5=[238632c853759b8809413245a45a6398]
+        <line style="stroke: #A80036; stroke-width: 1.0;" x1="32" x2="456" y1="447.2148" y2="447.2148"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="225"
+              x="44" y="442.4727">finished processing file for delta-id
+        </text><!--MD5=[fb168941698c029088cfc21f8c28733e]
 @startuml img/programInitial
-
-title __Initial Download Sequence1 Diagram__\n
 
 control Flow
 
@@ -175,19 +179,21 @@ control Zipfile2Stream
 control DatabaseFacade
 database Postgres
 
-Flow -> DatabaseFacade: findLastMutationMessage
-DatabaseFacade -> Postgres : find
-Postgres -> DatabaseFacade: MutationMessage [0..1]
+Flow -> DatabaseFacade: get last delta-id
+DatabaseFacade -> Postgres : find delta-id
+Postgres -> DatabaseFacade: initial
+DatabaseFacade -> Flow
 
-DatabaseFacade -> DownloadService : get initial ZipFile
+Flow -> DownloadService : get file for delta-id
 DownloadService -> Zipfile2Stream : parseZipfile()
-
 Zipfile2Stream -> DatabaseFacade : insertMutationGroups
 DatabaseFacade -> Postgres : batch mutationgroups
 Postgres -> DatabaseFacade: update response
-DatabaseFacade -> Postgres: Insert MutationMessage
-Postgres -> DatabaseFacade: inserted 
-DatabaseFacade -> Flow: finished processing initial zipfile  
+DatabaseFacade -> Flow
+Flow -> DatabaseFacade: save delta-id
+DatabaseFacade -> Postgres: insert delta-id
+Postgres -> DatabaseFacade: inserted
+DatabaseFacade -> Flow: finished processing file for delta-id
 
 @enduml
 
