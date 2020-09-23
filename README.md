@@ -32,6 +32,7 @@ Building the API client library requires:
 1. Java 1.14+
 2. Maven 3.6.3
 3. docker-compose or working postgres sql server
+4. 5 Gb space on temp drive
 
 ## Program SynchronizeDatabase
 
@@ -200,7 +201,7 @@ public class SynchronizeDatabase {
                     return z2s.toZipFlowable(infile).toObservable()
                             // per zip Entry
                             .flatMap((ZipInputStream inputStream) -> z2s.toFlowableMutatie(inputStream).toObservable())
-                            // 1000 mutation groups at a time (also commit)
+                            // 10000 mutation groups at a time (also commit)
                             .buffer(10000)
                             .flatMap(df::insertMutationGroups)
                             .collect(Collectors.summingInt(Integer::intValue))
