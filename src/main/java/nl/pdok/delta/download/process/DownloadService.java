@@ -9,7 +9,10 @@ import okhttp3.HttpUrl;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -38,7 +41,7 @@ public class DownloadService {
         HttpUrl.Builder deltaUrlBuilder = HttpUrl.parse(this.downloadUrl).newBuilder()
                 .addQueryParameter("count", "1000");
 
-        if (delta.getDeliveryId() != null) {
+        if (!"initial".equals(delta.getDeliveryId())) {
             outputFile = delta.getDeliveryId();
             deltaUrlBuilder.addQueryParameter("delta-id", delta.getDeliveryId());
         }
