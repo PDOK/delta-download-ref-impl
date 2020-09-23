@@ -3,10 +3,10 @@ package nl.pdok.delta.download.process;
 
 import io.reactivex.rxjava3.core.Emitter;
 import io.reactivex.rxjava3.core.Flowable;
+import nl.pdok.delta.download.process.model.MutationData;
 import nl.pdok.delta.download.process.model.MutationGroup;
 import nl.pdok.delta.download.process.model.MutationMessage;
 import nl.pdok.delta.download.util.XmlReaderUtil;
-import nl.pdok.delta.download.process.model.MutationData;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;

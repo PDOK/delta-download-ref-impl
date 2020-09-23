@@ -5,10 +5,10 @@ import io.reactivex.rxjava3.schedulers.Schedulers;
 import nl.pdok.delta.download.process.DeltaDownloadService;
 import nl.pdok.delta.download.process.DownloadService;
 import nl.pdok.delta.download.process.ZipFile2Stream;
+import nl.pdok.delta.download.process.database.ConnectionProvider;
 import nl.pdok.delta.download.process.database.DatabaseFacade;
 import nl.pdok.delta.download.process.database.PGConnectionProviderImpl;
 import nl.pdok.delta.download.process.model.MutationMessage;
-import nl.pdok.delta.download.process.database.ConnectionProvider;
 
 import java.io.File;
 import java.util.logging.Level;
@@ -30,7 +30,7 @@ public class SynchronizeDatabase {
         DeltaDownloadService deltas = new DeltaDownloadService("https://downloads.pdok.nl/kadastralekaart/api/v4_0/delta");
         DownloadService downloader = new DownloadService("https://downloads.pdok.nl/kadastralekaart/api/v4_0/delta/predefined/dkk-gml-nl.zip");
 
-        logger.info(String.format("Starting Processing Delta's"));
+        logger.info("Starting Processing Delta's");
         synchronize(df, deltas, downloader);
     }
 
@@ -66,6 +66,6 @@ public class SynchronizeDatabase {
                 .doOnError(error -> logger.log(Level.SEVERE, "", error))
                 .blockingSubscribe();
 
-        logger.info(String.format("Finished Processing Delta's"));
+        logger.info("Finished Processing Delta's");
     }
 }

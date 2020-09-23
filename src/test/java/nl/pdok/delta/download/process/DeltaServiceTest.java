@@ -16,21 +16,19 @@ class DeltaServiceTest {
     void findRemainingDeliveries() throws IOException {
 
         MockWebServer server = new MockWebServer();
-        server.enqueue(new MockResponse().setBody("{\n" +
-                "    \"deltas\": [\n" +
-                "        {\n" +
-                "            \"id\": \"a87da165-9109-4b0b-bbb8-371e1d1ca1c0\",\n" +
-                "            \"timeWindow\": {\n" +
-                "                \"from\": \"2020-09-13T21:59:59Z\",\n" +
-                "                \"to\": \"2020-09-14T21:59:59Z\"\n" +
-                "            }\n" +
-                "        }\n" +
-                "    ],\n" +
-                "    \"_links\": []\n" +
-                "}"));
-
-
-        //server.enqueue(new MockResponse().);
+        server.enqueue(new MockResponse().setBody("""
+                {
+                    "deltas": [
+                        {
+                            "id": "a87da165-9109-4b0b-bbb8-371e1d1ca1c0",
+                            "timeWindow": {
+                                "from": "2020-09-13T21:59:59Z",
+                                "to": "2020-09-14T21:59:59Z"
+                            }
+                        }
+                    ],
+                    "_links": []
+                }"""));
 
         // Start the server.
         server.start();
@@ -39,7 +37,6 @@ class DeltaServiceTest {
         HttpUrl deltaUrl = server.url("/kadastralekaart/api/v4_0/delta");
         DeltaDownloadService ds = new DeltaDownloadService(deltaUrl.toString());
 
-
         // execute
         TestObserver<Delta> fileObserver = new TestObserver<>();
         ds.findRemainingDeltas("random deliveryId").subscribe(fileObserver);
@@ -47,7 +44,6 @@ class DeltaServiceTest {
         fileObserver.assertNoErrors();
         fileObserver.assertComplete();
         fileObserver.assertValue(delta -> delta.getDeliveryId().equals("a87da165-9109-4b0b-bbb8-371e1d1ca1c0"));
-
 
         // Shut down the server. Instances cannot be reused.
         server.shutdown();
@@ -58,9 +54,6 @@ class DeltaServiceTest {
 
         MockWebServer server = new MockWebServer();
         server.enqueue(new MockResponse().setResponseCode(500));
-
-
-        //server.enqueue(new MockResponse().);
 
         // Start the server.
         server.start();

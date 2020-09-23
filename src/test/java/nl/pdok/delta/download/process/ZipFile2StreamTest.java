@@ -5,6 +5,7 @@ import io.reactivex.rxjava3.observers.TestObserver;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
+import java.util.List;
 import java.util.stream.Collectors;
 
 class ZipFile2StreamTest {
@@ -21,7 +22,7 @@ class ZipFile2StreamTest {
         Single<Integer> collect = f2s.toZipFlowable(file)
                 .flatMap(f2s::toFlowableMutatie)
                 .buffer(10000)
-                .map(x -> x.size())
+                .map(List::size)
                 .collect(Collectors.summingInt(Integer::intValue))
                 .doOnSuccess(numberOfMutationGroups-> System.out.println("Mutation Records Processed : " + numberOfMutationGroups));
 

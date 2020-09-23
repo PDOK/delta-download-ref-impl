@@ -7,11 +7,9 @@ import nl.pdok.delta.download.process.model.MutationMessage;
 
 import java.sql.*;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class DatabaseFacade {
 
-    private final Logger logger = Logger.getLogger(this.getClass().getName());
     private final ConnectionProvider connectionProvider;
 
     public DatabaseFacade(ConnectionProvider connectionProvider) {
@@ -56,7 +54,7 @@ public class DatabaseFacade {
     int insert(MutationMessage mutationMessage) throws SQLException {
 
         try (Connection conn = connectionProvider.getConnection();
-             PreparedStatement ps = createInsert(conn, mutationMessage);) {
+             PreparedStatement ps = createInsert(conn, mutationMessage)) {
             conn.setAutoCommit(false);
             int i = ps.executeUpdate();
             conn.commit();

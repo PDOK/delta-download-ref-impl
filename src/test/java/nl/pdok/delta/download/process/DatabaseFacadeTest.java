@@ -89,13 +89,13 @@ class DatabaseFacadeTest {
         List<MutationGroup> mgrs = new ArrayList<>();
 
         MutationGroup mgInitial = new MutationGroup();
-        mgInitial.wordt = MutationData.MutatieDataBuilder.aMutatie().withId("0").withFeature("Perceel").withData(data).build();
+        mgInitial.wordt = MutationData.MutatieDataBuilder.aMutatie().withId("0").withData(data).build();
         mgrs.add(mgInitial);
 
         for (int i = 1; i < 100; i++) {
             MutationGroup mg = new MutationGroup();
             mg.was = mgInitial.wordt;
-            mg.wordt = MutationData.MutatieDataBuilder.aMutatie().withId("" + i).withFeature("Perceel").withData(data).build();
+            mg.wordt = MutationData.MutatieDataBuilder.aMutatie().withId("" + i).withData(data).build();
             mgrs.add(mg);
             mgInitial = mg;
         }

@@ -15,14 +15,6 @@ public class Delta {
         return deliveryId;
     }
 
-    public String getFrom() {
-        return from;
-    }
-
-    public String getTo() {
-        return to;
-    }
-
     @Override
     public String toString() {
         return "Delta{" +
@@ -30,9 +22,5 @@ public class Delta {
                 ", from='" + from + '\'' +
                 ", to='" + to + '\'' +
                 '}';
-    }
-
-    public static Delta empty(){
-        return new Delta(null,null,null);
     }
 }

@@ -18,12 +18,8 @@ import static io.reactivex.rxjava3.core.Observable.just;
 import static nl.pdok.delta.download.util.HttpUtil.getUnsafeOkHttpClient;
 
 public class DeltaDownloadService {
-    private static final int KB = 1024;
-    private static final int MB = 1024 * KB;
-    public static final int UPDATE_INTERVAL_MILLIS = 1000;
 
     private final Logger logger = Logger.getLogger(this.getClass().getName());
-
 
     private final String downloadUrl;
 
