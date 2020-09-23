@@ -140,11 +140,13 @@ mvn compile exec:java
 
 ### Getting Started With SynchronizeDatabase
 
-Please follow the [installation](#installation) instruction and execute the following Java code:
+
 
 ```java
 
 // Import classes:
+package nl.pdok.delta.download;
+
 import io.reactivex.rxjava3.core.Scheduler;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 import nl.pdok.delta.download.process.DeltaDownloadService;
@@ -164,23 +166,24 @@ import java.util.zip.ZipInputStream;
 public class SynchronizeDatabase {
 
     private static final Logger logger = Logger.getLogger("SyncDatabase");
-    
-    // main
+
     public static void main(String... args) {
         System.setProperty("java.util.logging.SimpleFormatter.format",
                 "%1$tF %1$tT %4$s %2$s %5$s%6$s%n");
-        // Connect to Postgres docker-compose
+
         ConnectionProvider cp = new PGConnectionProviderImpl("localhost", 5432, "postgres", "pdok", "pdok");
         DatabaseFacade df = new DatabaseFacade(cp);
 
+        // example using the DKK Delta download Endpoints
         DeltaDownloadService deltas = new DeltaDownloadService("https://downloads.pdok.nl/kadastralekaart/api/v4_0/delta");
         DownloadService downloader = new DownloadService("https://downloads.pdok.nl/kadastralekaart/api/v4_0/delta/predefined/dkk-gml-nl.zip");
 
-        logger.info("Starting Processing Delta's");
         synchronize(df, deltas, downloader);
     }
 
     protected static void synchronize(DatabaseFacade df, DeltaDownloadService deltas, DownloadService downloader) {
+        logger.info("Starting Processing Delta's");
+
         Scheduler single = Schedulers.single();
 
         // Find Latest processed Mutation

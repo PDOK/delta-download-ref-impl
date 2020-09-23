@@ -23,18 +23,20 @@ public class SynchronizeDatabase {
     public static void main(String... args) {
         System.setProperty("java.util.logging.SimpleFormatter.format",
                 "%1$tF %1$tT %4$s %2$s %5$s%6$s%n");
-        // todo params from args
+
         ConnectionProvider cp = new PGConnectionProviderImpl("localhost", 5432, "postgres", "pdok", "pdok");
         DatabaseFacade df = new DatabaseFacade(cp);
 
+        // example using the DKK Delta download Endpoints
         DeltaDownloadService deltas = new DeltaDownloadService("https://downloads.pdok.nl/kadastralekaart/api/v4_0/delta");
         DownloadService downloader = new DownloadService("https://downloads.pdok.nl/kadastralekaart/api/v4_0/delta/predefined/dkk-gml-nl.zip");
 
-        logger.info("Starting Processing Delta's");
         synchronize(df, deltas, downloader);
     }
 
     protected static void synchronize(DatabaseFacade df, DeltaDownloadService deltas, DownloadService downloader) {
+        logger.info("Starting Processing Delta's");
+
         Scheduler single = Schedulers.single();
 
         // Find Latest processed Mutation
