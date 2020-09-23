@@ -15,7 +15,7 @@ class ZipFile2StreamTest {
 
         File file = new File("src/test/resources/somedelta.zip");
 
-        ZipFile2Stream f2s = new ZipFile2Stream();
+        Zipfile2Stream f2s = new Zipfile2Stream();
 
         TestObserver<Integer> zipObserver = new TestObserver<>();
 

@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>nl.pdok.download</groupId>
-    <artifactId>MutatieProcessor</artifactId>
+    <artifactId>DeltaDownloadRefImpl</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <javaVersion>11</javaVersion>
+        <javaVersion>15</javaVersion>
     </properties>
 
     <dependencies>
@@ -18,7 +18,7 @@
             <artifactId>okhttp</artifactId>
             <version>3.4.2</version>
         </dependency>
-            <dependency>
+        <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>mockwebserver</artifactId>
             <version>3.4.2</version>
@@ -84,7 +84,7 @@
             <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
-            </dependencies>
+    </dependencies>
 
     <build>
         <plugins>
@@ -97,6 +97,27 @@
                     <release>15</release>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <mainClass>nl.pdok.delta.download.SynchronizeDatabase</mainClass>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 

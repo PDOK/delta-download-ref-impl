@@ -4,7 +4,7 @@ import io.reactivex.rxjava3.core.Scheduler;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 import nl.pdok.delta.download.process.DeltaDownloadService;
 import nl.pdok.delta.download.process.DownloadService;
-import nl.pdok.delta.download.process.ZipFile2Stream;
+import nl.pdok.delta.download.process.Zipfile2Stream;
 import nl.pdok.delta.download.process.database.ConnectionProvider;
 import nl.pdok.delta.download.process.database.DatabaseFacade;
 import nl.pdok.delta.download.process.database.PGConnectionProviderImpl;
@@ -47,7 +47,7 @@ public class SynchronizeDatabase {
                 .flatMap(downloader::downloadFile) //
                 //  process mutations in database
                 .flatMap((File infile) -> {
-                    ZipFile2Stream z2s = new ZipFile2Stream();
+                    Zipfile2Stream z2s = new Zipfile2Stream();
                     return z2s.toZipFlowable(infile).toObservable()
                             // per zip Entry
                             .flatMap((ZipInputStream inputStream) -> z2s.toFlowableMutatie(inputStream).toObservable())

@@ -18,7 +18,7 @@ import java.util.zip.ZipInputStream;
 import static io.reactivex.rxjava3.core.Flowable.generate;
 
 
-public class ZipFile2Stream {
+public class Zipfile2Stream {
     // ZipFileStream has state
     // Mutation Message does not have counts, processing MutatieGroep in a streaming fashion with progress is not efficient if applied
     // XML MutationMessage contains both zipped entry feature ObjectType, which is not te case. 1 ZipEntry -> 1 ObjectType
