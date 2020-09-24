@@ -56,9 +56,9 @@ public class SynchronizeDatabase {
                             // 1000 mutation groups at a time (also commit)
                             .buffer(10000)
                             .flatMap(df::insertMutationGroups)
-                            .doOnEach(result -> {
+                            .doOnNext(result -> {
                                 if (result != null) {
-                                    logger.info(String.format("Processed : %d mutation groups ", result.getValue()));
+                                    logger.info(String.format("Processed : %d mutation groups ", result));
                                 }
                             })
                             .collect(Collectors.summingInt(Integer::intValue))

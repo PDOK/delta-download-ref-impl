@@ -23,6 +23,12 @@ class ZipFile2StreamTest {
                 .flatMap(f2s::toFlowableMutatie)
                 .buffer(10000)
                 .map(List::size)
+                .doOnNext(result -> {
+                    if (result != null) {
+                        System.out.println(String.format("Processed : %d mutation groups ", result));
+                    }
+                })
+
                 .collect(Collectors.summingInt(Integer::intValue))
                 .doOnSuccess(numberOfMutationGroups-> System.out.println("Mutation Records Processed : " + numberOfMutationGroups));
 
