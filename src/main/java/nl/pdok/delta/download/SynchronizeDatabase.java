@@ -70,9 +70,15 @@ public class SynchronizeDatabase {
                             })
                             .flatMap(x -> df.insertMutationMessage(z2s.getMutationMessage())).toObservable();
                 })
-                .doOnError(error -> logger.log(Level.SEVERE, "", error))
+                .doOnError(error -> {
+                    logger.log(Level.SEVERE, "", error);
+                    System.exit(1);
+                })
+                .doFinally(() -> {
+                    logger.info("Finished Processing Delta's");
+                    System.exit(0);
+                })
                 .blockingSubscribe();
 
-        logger.info("Finished Processing Delta's");
     }
 }
