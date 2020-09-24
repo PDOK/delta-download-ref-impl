@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 class ZipFile2StreamTest {
 
     @Test
-    void readZipfile() {
+    void readZipfileEmitMutationGroups() {
 
         File file = new File("src/test/resources/somedelta.zip");
 

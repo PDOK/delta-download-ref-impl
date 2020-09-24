@@ -58,7 +58,7 @@ class DatabaseFacadeTest {
 
 
     @Test
-    void connectPostgres() throws SQLException {
+    void interactWithDatabase() throws SQLException {
 
         //ConnectionProvider cp = new PGConnecti0onProviderImpl("localhost", 5432, "postgres", "pdok", "pdok");
         ConnectionProvider cp = new MemoryProviderImpl("localhost", 5432, "postgres" + System.currentTimeMillis(), "pdok", "pdok");
