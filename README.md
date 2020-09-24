@@ -29,9 +29,9 @@ see steps 1 and 3 under method.
 ## Requirements
 
 Building the API client library requires:
-1. Java 1.14+
+1. Java 1.14+ (textblocks)
 2. Maven 3.6.3
-3. docker-compose (need 100 GB dkk, 500GB BGT free disk space ) or working postgres sql server
+3. docker-compose (need 100 GB dkk, 500GB BGT free disk space ) or working postgres sql server remote with enough room
 4. additional 5 Gb space on temp drive
 
 ## Program SynchronizeDatabase
