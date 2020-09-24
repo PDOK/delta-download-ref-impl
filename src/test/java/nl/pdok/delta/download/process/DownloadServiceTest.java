@@ -16,7 +16,7 @@ class DownloadServiceTest {
 
 
     @Test
-    void downloadDelte_Ok() throws IOException {
+    void downloadDelte() throws IOException {
 
         File file = new File("src/test/resources/somedelta.zip");
 
@@ -46,7 +46,7 @@ class DownloadServiceTest {
     }
 
     @Test
-    void downloadDelta_Nok() throws IOException {
+    void downloadDelta_error() throws IOException {
 
         File file = new File("src/test/resources/somedelta.zip");
 
