@@ -87,7 +87,7 @@ public class XmlReaderUtil {
             throw new XMLStreamException("End element for " + tagLocalName + " not found");
         }
 
-        return out.toString().replaceAll("\n", "").replaceAll("'", "''");
+        return out.toString();
     }
 
 

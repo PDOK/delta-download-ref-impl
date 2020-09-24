@@ -132,12 +132,12 @@ public class Zipfile2Stream {
                     if ("was".equals(localName)) {
                         mg.was = new MutationData.MutatieDataBuilder()
                                 .withId(streamReader.getAttributeValue(0))
-                                .withData(XmlReaderUtil.getTagContentAsXML(streamReader)).build();
+                                .withData(XmlReaderUtil.getTagContentAsXML(streamReader).replaceAll("\n", "").replaceAll("'", "''")).build();
 
                     } else if ("wordt".equals(localName)) {
                         mg.wordt = new MutationData.MutatieDataBuilder()
                                 .withId(streamReader.getAttributeValue(0))
-                                .withData(XmlReaderUtil.getTagContentAsXML(streamReader)).build();
+                                .withData(XmlReaderUtil.getTagContentAsXML(streamReader).replaceAll("\n", "").replaceAll("'", "''")).build();
                     }
                     break;
                 }
