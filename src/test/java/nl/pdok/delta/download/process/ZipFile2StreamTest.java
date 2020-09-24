@@ -28,7 +28,6 @@ class ZipFile2StreamTest {
                         System.out.println(String.format("Processed : %d mutation groups ", result));
                     }
                 })
-
                 .collect(Collectors.summingInt(Integer::intValue))
                 .doOnSuccess(numberOfMutationGroups-> System.out.println("Mutation Records Processed : " + numberOfMutationGroups));
 
