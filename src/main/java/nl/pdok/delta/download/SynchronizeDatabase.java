@@ -72,11 +72,11 @@ public class SynchronizeDatabase {
                 })
                 .doOnError(error -> {
                     logger.log(Level.SEVERE, "", error);
-                    System.exit(1);
+                   
                 })
                 .doFinally(() -> {
                     logger.info("Finished Processing Delta's");
-                    System.exit(0);
+               
                 })
                 .blockingSubscribe();
 
